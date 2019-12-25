@@ -71,3 +71,10 @@ Trainable params: 1,481
 Non-trainable params: 0
 _________________________________________________________________
 ```
+
+
+
+* Adam Optimizer:
+```python
+adam_opt = Adam(learning_rate=0.001,beta_1=0.9, beta_2=0.999, amsgrad=False)
+```
