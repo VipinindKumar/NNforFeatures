@@ -85,3 +85,10 @@ adam_opt = Adam(learning_rate=0.001,beta_1=0.9, beta_2=0.999, amsgrad=False)
 ```python
 model.compile(loss='mean_squared_error', optimizer=adam_opt, metrics=['accuracy'])
 ```
+
+
+
+* .fit() Hypreparameters:
+```python
+fit = model.fit(X_scl, Y, epochs=500, validation_split=0.3)
+```
