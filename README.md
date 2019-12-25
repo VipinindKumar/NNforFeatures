@@ -139,3 +139,22 @@ w = h1.get_weights()[0]
 
 b = h1.get_weights()[1]
 ```
+
+
+
+* Calculating activation for first hidden layer:
+```python
+# calculate activation for h1 layer
+# a = g(z) = g(wx + b)
+# (nl,m)   (nl,n)(n,m)  (nl,1)
+
+# reshape to right dimensions
+b1 = b.reshape((-1,1))
+
+# calculate z
+z1 = w.T @ X_scl.T + b1
+
+# relu function for layer activations
+a1 = np.maximum(0, z1)
+a1.shape
+```
