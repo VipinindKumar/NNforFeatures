@@ -122,3 +122,10 @@ def xgb_model(X, Y):
     print("Train: %.2f%%" % (accuracy_score(y_train, y_pred_train) * 100.0))
     print("Test: %.2f%%" % (accuracy_score(y_test, y_pred) * 100.0))
 ```
+
+
+
+* Feature Importamce:
+```python
+plot_importance(xgbModel)
+```
