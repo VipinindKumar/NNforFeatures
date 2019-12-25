@@ -3,6 +3,15 @@ Exloring automation of Feature Engineering using Neural Netwroks
 
 <hr>
 
+
+* To start Pima Indians Diabetes Database from Kaggle is used:
+```
+Columns = Pregnancies, Glucose, BloodPressure, SkinThickness, Insulin, BMI, DiabetesPedigreeFunction, Age
+shape = (768, 8)
+```
+
+
+
 * Fixed seed for reproducible results (still will vary a little):
 ```python
 seed = 43
