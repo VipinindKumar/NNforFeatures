@@ -28,3 +28,22 @@ X_scl_arr = scaler.fit_transform(X) #ndarray
 
 X_scl = pd.DataFrame(X_scl_arr, columns=X.columns)
 ```
+
+
+* Neural Network build using Keras library:
+```python
+input = Input(shape=(X_scl.shape[1],))
+
+h1 = Dense(32, activation='relu', kernel_regularizer=regularizers.l2(0.03))
+a1 = h1(input)
+
+h2 = Dense(32, activation='relu', kernel_regularizer=regularizers.l2(0.03))
+a2 = h2(a1)
+
+h3 = Dense(4, activation='relu')
+a3 = h3(a2)
+
+output = Dense(1, activation='sigmoid')(a3)
+
+model = Model(inputs=input, outputs=output)
+```
