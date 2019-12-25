@@ -130,3 +130,12 @@ def xgb_model(X, Y):
 plot_importance(xgbModel)
 ```
 ![pima dataset feature importance](images/pima_feature_importance.png)
+
+
+
+* Getting Weights and bias for hidden layer:
+```python
+w = h1.get_weights()[0]
+
+b = h1.get_weights()[1]
+```
