@@ -16,3 +16,15 @@ np.random.seed(seed)
 tf.random.set_seed(seed)
 rn.seed(seed)
 ```
+
+
+* Scale the data using sklearn's StandardScaler():
+```python
+# adding scailing of the data
+from sklearn.preprocessing import StandardScaler
+
+scaler = StandardScaler()
+X_scl_arr = scaler.fit_transform(X) #ndarray
+
+X_scl = pd.DataFrame(X_scl_arr, columns=X.columns)
+```
