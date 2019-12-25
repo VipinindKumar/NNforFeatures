@@ -18,7 +18,7 @@ rn.seed(seed)
 ```
 
 
-* Scale the data using sklearn's StandardScaler():
+* Scale the data for 0 mean and unit std, using sklearn's StandardScaler():
 ```python
 # adding scailing of the data
 from sklearn.preprocessing import StandardScaler
