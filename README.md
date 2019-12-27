@@ -158,3 +158,10 @@ z1 = w.T @ X_scl.T + b1
 a1 = np.maximum(0, z1)
 a1.shape
 ```
+<hr>
+
+* a1 mostly 0.0000s, sparse matrix::
+    - more hidden units than required?
+    - check % of zeroes in features
+    - L1 regularization?
+
