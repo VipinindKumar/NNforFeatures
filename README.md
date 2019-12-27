@@ -202,3 +202,7 @@ f1-31      0.000000
 dtype: float64
 ```
 - RELU activation function induuce sparsity
+```
+From: Xavier Glorot, Antoine Bordes and Yoshua Bengio
+```
+![](images/reluActivation.png)
