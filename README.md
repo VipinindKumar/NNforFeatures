@@ -165,6 +165,7 @@ a1.shape
     - check % of zeroes in features
     - L1 regularization?
 - a1.sum():
+    - only 6 non-zero features
 ```
 f1-0     129.157055
 f1-1       0.000000
