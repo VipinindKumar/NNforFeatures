@@ -201,3 +201,4 @@ f1-30      0.000000
 f1-31      0.000000
 dtype: float64
 ```
+- RELU activation function induuce sparsity
