@@ -160,7 +160,7 @@ a1.shape
 ```
 <hr>
 
-* a1 mostly 0.0000s, sparse matrix::
+* a1 mostly 0.0000s, sparse dataframe::
     - more hidden units than required?
     - check % of zeroes in features
     - L1 regularization?
