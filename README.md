@@ -206,3 +206,8 @@ dtype: float64
 From: Xavier Glorot, Antoine Bordes and Yoshua Bengio
 ```
 ![](images/reluActivation.png)
+
+
+
+- 11 non-zero features using LeakyRelu with alpha as 0.01
+- 32 using tanh
