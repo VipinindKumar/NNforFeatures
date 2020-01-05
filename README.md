@@ -2,6 +2,12 @@
 Exloring automation of Feature Engineering using Neural Netwroks
 
 <hr>
+- Need to do:
+    - New Dataset (bigger and with diverse uncorrelated features)
+    - abstract function to utilize both tanh and leakyrelu as activation
+
+
+<hr>
 
 
 * To start Pima Indians Diabetes Database from Kaggle is used:
