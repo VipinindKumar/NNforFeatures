@@ -162,3 +162,6 @@ From: Xavier Glorot, Antoine Bordes and Yoshua Bengio
 
 - 11 non-zero features using LeakyRelu with alpha as 0.01
 - 32 using tanh
+
+<hr>
+
