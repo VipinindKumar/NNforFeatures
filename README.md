@@ -1,5 +1,5 @@
 # NNforFeatures
-Exloring automation of Feature Engineering using Neural Netwroks
+Exploring automation of Feature Engineering using Neural Netwroks
 
 <hr>
 
