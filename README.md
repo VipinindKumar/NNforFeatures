@@ -95,6 +95,7 @@ model = XGBClassifier(max_depth=7,
 
 
 * Feature Importamce in XGBoost model:
+
 ![pima dataset feature importance](images/pima_feature_importance.png)
 
 
