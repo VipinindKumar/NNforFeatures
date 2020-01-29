@@ -286,3 +286,5 @@ NN val accuracy: 0.7922077775001526
     XGB Train accuracy: 78.77%
     XGB Test accuracy: 79.22%
 ```
+
+- adding X in the input doesn't affect the final result that much.
