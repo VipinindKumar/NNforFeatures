@@ -215,3 +215,57 @@ NN val accuracy: 0.7922077775001526
         - a1 is same in train and better in test
         - a2 is better in train and much better in test
 
+
+
+```
+XGB Train accuracy: 76.54%
+XGB Test accuracy: 80.09%
+
+relu:
+NN train loss: 0.15655751415360128
+NN val loss: 0.14780039391863398
+NN train accuracy: 0.7877095
+NN val accuracy: 0.7965368032455444
+    a1=>
+    XGB Train accuracy: 79.33%
+    XGB Test accuracy: 78.79%
+    a2=>
+    XGB Train accuracy: 79.33%
+    XGB Test accuracy: 80.09%
+    a1 & a2=>
+    XGB Train accuracy: 79.33%
+    XGB Test accuracy: 80.09%
+    X & a1=>
+    XGB Train accuracy: 79.33%
+    XGB Test accuracy: 77.92%
+    X & a2=>
+    XGB Train accuracy: 79.33%
+    XGB Test accuracy: 80.09%
+    X & a1 & a2=>
+    XGB Train accuracy: 79.33%
+    XGB Test accuracy: 80.09%
+
+tanh:
+NN train loss: 0.16419628392939684
+NN val loss: 0.14518083461048284
+NN train accuracy: 0.7802607
+NN val accuracy: 0.7922077775001526
+    a1=>
+    XGB Train accuracy: 77.84%
+    XGB Test accuracy: 80.95%
+    a2=>
+    XGB Train accuracy: 78.21%
+    XGB Test accuracy: 81.39%
+    a1 & a2=>
+    XGB Train accuracy: 78.77%
+    XGB Test accuracy: 79.22%
+    X & a1=>
+    XGB Train accuracy: 77.84%
+    XGB Test accuracy: 80.95%
+    X & a2=>
+    XGB Train accuracy: 78.21%
+    XGB Test accuracy: 79.22%
+    X & a1 & a2=>
+    XGB Train accuracy: 78.77%
+    XGB Test accuracy: 79.22%
+```
