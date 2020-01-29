@@ -102,7 +102,7 @@ model = XGBClassifier(max_depth=7,
 
 * Getting Weights and bias for hidden layer and then Calculating activation for hidden layers:
 ```python
-# calculate activation for h1 layer
+# calculate activation for hidden layers
 # a = g(z) = g(wx + b)
 # (nl,m)   (nl,n)(n,m)  (nl,1)
 ```
