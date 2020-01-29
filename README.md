@@ -108,7 +108,7 @@ model = XGBClassifier(max_depth=7,
 ```
 <hr>
 
-* a1 mostly 0.0000s, sparse dataframe::
+* a1 mostly 0.0000s, sparse dataframe with relu activation:
     - more hidden units than required?
     - check % of zeroes in features
     - L1 regularization?
