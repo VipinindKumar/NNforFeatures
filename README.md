@@ -216,6 +216,23 @@ NN val accuracy: 0.7922077775001526
         - a2 is better in train and much better in test
 
 
+- Run XGBmodel:
+   - with X as input
+   - using RELU:
+        - with a1 as input
+        - with a2 as input
+        - with a1 & a2 as input
+        - with X & a1 as input
+        - with X & a2 as input
+        - with X, a1 & a2 as input
+   - using TanH:
+        - with a1 as input
+        - with a2 as input
+        - with a1 & a2 as input
+        - with X & a1 as input
+        - with X & a2 as input
+        - with X, a1 & a2 as input
+
 
 ```
 XGB Train accuracy: 76.54%
