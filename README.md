@@ -6,7 +6,9 @@ Exploring automation of Feature Engineering using Neural Netwroks
 
 Instead of doing Feature Engineering with hand by mean-encoding, breaking strings, trends, averages, combination of features etc. It would be nice if we could automate the feature engineering process. 
 
-Main idea being that activations in hidden layers of a deep Neural Network, are combinations of input features generally representing lower level details or patterns to higher level details in the input. Using these details as input features in other type of modelsand investigate the effects of using activations as input features(being automatically engineered by training a Neural Network).
+Main idea being that activations in hidden layers of a deep Neural Network, are combinations of input features, generally representing lower level details or patterns to higher level details of the input data. Using these details as input features in other type of models and investigate the effects of using hidden layer activations as input features(being automatically engineered by training a Neural Network).
+
+Instead of X as input investigating the effects of using A1, A2, ... as inputs for model's training.
 
 <hr>
 
