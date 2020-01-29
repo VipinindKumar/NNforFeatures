@@ -1,4 +1,5 @@
-# NNforFeatures
+# Research: Automatic Features
+
 Exploring automation of Feature Engineering using Neural Netwroks
 
 
@@ -14,6 +15,7 @@ Instead of X as input investigating the effects of using A1, A2, ... as inputs f
 
 
 * To start Pima Indians Diabetes Database from Kaggle is used:
+
 ```
 Columns = Pregnancies, Glucose, BloodPressure, SkinThickness, Insulin, BMI, DiabetesPedigreeFunction, Age
 shape = (768, 8)
@@ -22,6 +24,7 @@ shape = (768, 8)
 
 
 * Fixed seed for reproducible results (still will vary a little):
+
 ```python
 seed = 43
 import os
@@ -40,6 +43,7 @@ rn.seed(seed)
 
 
 * Neural Network build using Keras library, model.summary():
+
 ```
 Model: "model_1"
 _________________________________________________________________
@@ -64,6 +68,7 @@ _________________________________________________________________
 
 
 * Adam Optimizer:
+
 ```python
 adam_opt = Adam(learning_rate=0.001,beta_1=0.9, beta_2=0.999, amsgrad=False)
 ```
@@ -71,6 +76,7 @@ adam_opt = Adam(learning_rate=0.001,beta_1=0.9, beta_2=0.999, amsgrad=False)
 
 
 * Loss and Metric:
+
 ```python
 model.compile(loss='mean_squared_error', optimizer=adam_opt, metrics=['accuracy'])
 ```
@@ -78,6 +84,7 @@ model.compile(loss='mean_squared_error', optimizer=adam_opt, metrics=['accuracy'
 
 
 * .fit() Hypreparameters:
+
 ```python
 fit = model.fit(X_scl, Y, epochs=500, validation_split=0.3)
 ```
@@ -86,6 +93,7 @@ fit = model.fit(X_scl, Y, epochs=500, validation_split=0.3)
 
 
 * XGBoost model to measure the features importance:
+
 ```python
 model = XGBClassifier(max_depth=7,
                       random_state=seed,
@@ -98,11 +106,12 @@ model = XGBClassifier(max_depth=7,
 
 * Feature Importamce in XGBoost model:
 
-![pima dataset feature importance](images/pima_feature_importance.png)
+![pima dataset feature importance](https://raw.githubusercontent.com/VipinindKumar/NNforFeatures/master/images/pima_feature_importance.png)
 
 
 
 * Getting Weights and bias for hidden layer and then Calculating activation for hidden layers, using calcActivation(model, X, act) function:
+
 ```python
 # calculate activation for hidden layers
 # a = g(z) = g(wx + b)
@@ -116,6 +125,7 @@ model = XGBClassifier(max_depth=7,
     - L1 regularization?
 - a1.sum():
     - only 6 non-zero features
+    
 ```
 f1-0     129.157055
 f1-1       0.000000
@@ -158,7 +168,7 @@ dtype: float64
 From: Xavier Glorot, Antoine Bordes and Yoshua Bengio
 ```
 
-![](images/reluActivation.png)
+![](https://raw.githubusercontent.com/VipinindKumar/NNforFeatures/master/images/reluActivation.png)
 
 
 
@@ -305,5 +315,7 @@ NN val accuracy: 0.7922077775001526
 
 - Need to do:
     - New Dataset (bigger and with diverse uncorrelated features)
-    - ~~abstract function to utilize both tanh and leakyrelu as activation~~
-    - the increase in performance need to investegated further using a bigger Neural Network combined with big and diverse Data.
+    - ~~Abstract function to utilize both tanh and leakyrelu as activation~~
+    - The increase in performance need to investegated further using a bigger Neural Network combined with big and diverse Data.
+    - Explore the Feature importance of these "Activation Features"
+    - Consider the memory usage of these activations, relu giving 6 features to use and tanh giving 32.
