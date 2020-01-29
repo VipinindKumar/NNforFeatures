@@ -203,3 +203,15 @@ NN val accuracy: 0.7922077775001526
     XGB Train accuracy: 77.84%
     XGB Test accuracy: 81.39%
 ```
+
+
+- For both activations relu and tanh, a2 as input performs better than a1
+- Near or better accuracy for both train and test with a2 than X
+- Neural Network with X vs. XGBoost with a1 & a2:
+    - relu:
+        - a1 is little better in train and worse in test
+        - a2 is better in train and same in test
+    - tanh:
+        - a1 is same in train and better in test
+        - a2 is better in train and much better in test
+
