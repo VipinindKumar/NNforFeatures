@@ -165,3 +165,31 @@ From: Xavier Glorot, Antoine Bordes and Yoshua Bengio
 
 <hr>
 
+```
+XGB Train accuracy: 76.54%
+XGB Test accuracy: 80.09%
+
+relu:
+NN train loss: 0.1564963618414806
+NN val loss: 0.14792472207959081
+NN train accuracy: 0.7858473
+NN val accuracy: 0.7965368032455444
+a1=>
+XGB Train accuracy: 76.54%
+XGB Test accuracy: 77.92%
+a2=>
+XGB Train accuracy: 79.33%
+XGB Test accuracy: 80.09%
+
+tanh:
+NN train loss: 0.16395572024905702
+NN val loss: 0.14515615728768436
+NN train accuracy: 0.7765363
+NN val accuracy: 0.7922077775001526
+a1=>
+XGB Train accuracy: 77.84%
+XGB Test accuracy: 80.95%
+a2=>
+XGB Train accuracy: 77.84%
+XGB Test accuracy: 81.39%
+```
