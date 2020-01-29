@@ -3,13 +3,6 @@ Exploring automation of Feature Engineering using Neural Netwroks
 
 <hr>
 
-- Need to do:
-    - New Dataset (bigger and with diverse uncorrelated features)
-    - ~~abstract function to utilize both tanh and leakyrelu as activation~~
-
-
-<hr>
-
 
 * To start Pima Indians Diabetes Database from Kaggle is used:
 ```
@@ -296,3 +289,11 @@ NN val accuracy: 0.7922077775001526
 ## Observation:
 
 - adding X in the input doesn't affect the final result that much.
+
+
+
+<hr>
+
+- Need to do:
+    - New Dataset (bigger and with diverse uncorrelated features)
+    - ~~abstract function to utilize both tanh and leakyrelu as activation~~
