@@ -165,6 +165,16 @@ From: Xavier Glorot, Antoine Bordes and Yoshua Bengio
 
 <hr>
 
+
+- Run XGBmodel:
+   - with X as input
+   - using RELU:
+        - with a1 as input
+        - with a2 as input
+   - using TanH:
+        - with a1 as input
+        - with a2 as input
+
 ```
 XGB Train accuracy: 76.54%
 XGB Test accuracy: 80.09%
