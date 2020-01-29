@@ -1,6 +1,13 @@
 # NNforFeatures
 Exploring automation of Feature Engineering using Neural Netwroks
 
+
+## Introduction:
+
+Instead of doing Feature Engineering with hand by mean-encoding, breaking strings, trends, averages, combination of features etc. It would be nice if we could automate the feature engineering process. 
+
+Main idea being that activations in hidden layers of a deep Neural Network, are combinations of input features generally representing lower level details or patterns to higher level details in the input. Using these details as input features in other type of modelsand investigate the effects of using activations as input features(being automatically engineered by training a Neural Network).
+
 <hr>
 
 
