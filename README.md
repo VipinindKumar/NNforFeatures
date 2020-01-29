@@ -165,6 +165,8 @@ From: Xavier Glorot, Antoine Bordes and Yoshua Bengio
 
 <hr>
 
+## Results:
+
 
 - Run XGBmodel:
    - with X as input
@@ -204,6 +206,7 @@ NN val accuracy: 0.7922077775001526
     XGB Test accuracy: 81.39%
 ```
 
+## Observations:
 
 - For both activations relu and tanh, a2 as input performs better than a1
 - Near or better accuracy for both train and test with a2 than X
