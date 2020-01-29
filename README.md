@@ -165,7 +165,7 @@ From: Xavier Glorot, Antoine Bordes and Yoshua Bengio
 
 <hr>
 
-## Results:
+## Output:
 
 
 - Run XGBmodel:
@@ -218,6 +218,9 @@ NN val accuracy: 0.7922077775001526
         - a1 is same in train and better in test
         - a2 is better in train and much better in test
 
+<hr>
+
+## Output:
 
 - Run XGBmodel:
    - with X as input
@@ -289,5 +292,7 @@ NN val accuracy: 0.7922077775001526
     XGB Train accuracy: 78.77%
     XGB Test accuracy: 79.22%
 ```
+
+## Observation:
 
 - adding X in the input doesn't affect the final result that much.
